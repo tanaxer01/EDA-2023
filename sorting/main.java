@@ -22,9 +22,9 @@ class Main {
 
     public static void main(String[] args) {
         int[] A = random_arr(10, 30);
-
         print_arr(A);
-        InsertionSort.recursive_sort(A, A.length);
+
+        MergeSort.sort(A, 0, A.length - 1);
         print_arr(A);
     }
 }
