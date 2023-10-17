@@ -18,7 +18,7 @@ public class SelectionSort {
 
     public static void recursive_sort(int arr[], int n) {
         // Caso base
-        if (n == arr.length)
+        if (n == arr.length - 1)
             return;
 
         // Buscamos el minimo en esta iteración para dejarlo en el puesto n.
