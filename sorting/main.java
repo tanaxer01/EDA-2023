@@ -24,7 +24,7 @@ class Main {
         int[] A = random_arr(10, 30);
         print_arr(A);
 
-        MergeSort.sort(A, 0, A.length - 1);
+        QuickSort.sort(A, 0, A.length - 1);
         print_arr(A);
     }
 }
