@@ -22,9 +22,21 @@ class Main {
 
     public static void main(String[] args) {
         int[] A = random_arr(10, 30);
+        System.out.print("1 => ");
         print_arr(A);
 
-        QuickSort.sort(A, 0, A.length - 1);
+        HeapSort.sort(A);
+        System.out.print("1 => ");
         print_arr(A);
+
+        HeapSort H = new HeapSort();
+        A = random_arr(10, 30);
+        System.out.print("2 => ");
+        print_arr(A);
+
+        H.sort2(A);
+        System.out.print("2 => ");
+        print_arr(A);
+
     }
 }
